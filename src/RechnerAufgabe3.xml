@@ -80,6 +80,14 @@
             <netto-betrag>808.59</netto-betrag>
             <mehrwert-steuer-betrag>153.63</mehrwert-steuer-betrag>
         </entgelt>
+        <bezahl-moeglichkeiten>
+            <bankverbindung>
+                <bank>sparkasse karlsruhe</bank>
+                <konto-nr>3568435456</konto-nr>
+                <blz>de 5435764</blz>
+            </bankverbindung>
+            <bitcoin></bitcoin>
+        </bezahl-moeglichkeiten>
     </rechnung>
 
     <rechnung>
@@ -147,50 +155,85 @@
             <mehrwert-steuer-betrag>116.74</mehrwert-steuer-betrag>
         </entgelt>
 
+        <bezahl-moeglichkeiten>
+            <bankverbindung>
+                <bank>deutsche bank loerrach</bank>
+                <iban>5436453643514654</iban>
+                <bic>DE4564655</bic>
+            </bankverbindung>
+        </bezahl-moeglichkeiten>
     </rechnung>
 
     <rechnung>
         <anschrift-des-leistenden-unternehmers>
-            <name-unternehmen></name-unternehmen>
+            <name-unternehmen>bestatter uttenberg</name-unternehmen>
             <adresse>
-                <ort></ort>
-                <postleihzahl></postleihzahl>
-                <straße></straße>
-                <haus-nummer></haus-nummer>
+                <ort>ultersingen</ort>
+                <postleihzahl>55215</postleihzahl>
+                <straße>oberbergweg</straße>
+                <haus-nummer>5</haus-nummer>
             </adresse>
         </anschrift-des-leistenden-unternehmers>
-        <
+        <umsatzsteuer-identifikations-nummer>DE6435458435454354</umsatzsteuer-identifikations-nummer>
         <anschrift-des-leistungs-empfängers>
             <name-leistungs-empfänger>
-                <vorname></vorname>
-                <nachname></nachname>
+                <vorname>Familie</vorname>
+                <nachname>Urmel</nachname>
             </name-leistungs-empfänger>
             <adresse>
-                <ort></ort>
-                <postleihzahl></postleihzahl>
-                <straße></straße>
-                <haus-nummer></haus-nummer>
+                <ort>ultersingen</ort>
+                <postleihzahl>58168</postleihzahl>
+                <straße>ulternstarße</straße>
+                <haus-nummer>764</haus-nummer>
             </adresse>
         </anschrift-des-leistungs-empfängers>
-        <rechnungs-nummer></rechnungs-nummer>
+        <rechnungs-nummer>58632125</rechnungs-nummer>
         <austellungs-datum>
-            <tag></tag>
-            <monat></monat>
-            <jahr></jahr>
+            <tag>19</tag>
+            <monat>7</monat>
+            <jahr>2017</jahr>
         </austellungs-datum>
         <verwendete-waehrung></verwendete-waehrung>
         <leistungen>
             <leistung>
-                <bezeichnung></bezeichnung>
-                <gesamt-preis></gesamt-preis>
-                <mehrwertsteuer-in-prozent></mehrwertsteuer-in-prozent>
+                <bezeichnung>urne eiche massive</bezeichnung>
+                <gesamt-preis>299.99</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            
+            <leistung>
+                <bezeichnung>ueberfuerung krematorium</bezeichnung>
+                <gesamt-preis>349.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            
+            <leistung>
+                <bezeichnung>dekoration</bezeichnung>
+                <gesamt-preis>149.50</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            
+            <leistung>
+                <bezeichnung>trauerkarten</bezeichnung>
+                <menge>40</menge>
+                <einzel-preis>20.00</einzel-preis>
+                <gesamt-preis>80.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
         </leistungen>
         <entgelt>
-            <gesamt-betrag></gesamt-betrag>
-            <netto-betrag></netto-betrag>
-            <mehrwert-steuer-betrag></mehrwert-steuer-betrag>
+            <gesamt-betrag>878.49</gesamt-betrag>
+            <netto-betrag>783.23</netto-betrag>
+            <mehrwert-steuer-betrag>140.26</mehrwert-steuer-betrag>
         </entgelt>
+
+        <bezahl-moeglichkeiten>
+            <bankverbindung>
+                <iban>6845486545648</iban>
+                <bank>UBS zuerich</bank>
+            </bankverbindung>
+            <bitcoin>zgauwzeuokawfeGDZIWHBALDVGkjbhawudvhkaw56465</bitcoin>
+        </bezahl-moeglichkeiten>
     </rechnung>
 
 </rechnungen>

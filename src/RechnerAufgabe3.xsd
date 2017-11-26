@@ -126,29 +126,31 @@
 
     <xs:element name="bezahl-moeglichkeiten">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="bankverbindung"/>
-                <xs:element ref="bitcoin"/>
-            </xs:sequence>
+            <xs:all>
+                <xs:element ref="bankverbindung" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="bitcoin" minOccurs="0" maxOccurs="1"/>
+            </xs:all>
         </xs:complexType>
     </xs:element>
 
     <xs:element name="bankverbindung">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="iban"/>
-                <xs:element ref="bic"/>
-                <xs:element ref="bank"/>
-                <xs:element ref="konto-nr"/>
-            </xs:sequence>
+            <xs:all>
+                <xs:element ref="iban" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="bic" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="bank" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="konto-nr" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="blz" minOccurs="0" maxOccurs="1"/>
+            </xs:all>
         </xs:complexType>
     </xs:element>
 
 
     <xs:element name="email-adresse" type="xs:string"/>
 
+    <xs:element name="blz" type="xs:string"/>
     <xs:element name="bitcoin" type="xs:string"/>
-    <xs:element name="bic" type="xs:decimal"/>
+    <xs:element name="bic" type="xs:string"/>
     <xs:element name="iban" type="xs:string"/>
     <xs:element name="bank" type="xs:string"/>
     <xs:element name="konto-nr" type="xs:decimal"/>
