@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding ="UTF-8"?>
+<!--matrikel-nummer 57099%3 = 0 =>Nur Kleinbuchstaben. Bindestrich zum Trennen von Teilwörtern -->
+
+<rechnungen>
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>Kleintier Meier GmbH</name-unternehmen>
+            <email-adresse>klein.meier@tiere.de</email-adresse>
+            <adresse>
+                <ort>Machthausen</ort>
+                <postleihzahl>81828</postleihzahl>
+                <straße>Meierring</straße>
+                <haus-nummer>3</haus-nummer>
+            </adresse>
+            <telefon-nummer>0777/987987</telefon-nummer>
+            <fax-nummer>0777/987789</fax-nummer>
+            <steuer-nummer>88123/82822</steuer-nummer>
+        </anschrift-des-leistenden-unternehmers>
+        <rechnungs-nummer>657321</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>15</tag>
+            <monat>1</monat>
+            <jahr>2017</jahr>
+        </austellungs-datum>
+        <entgelt>962,22</entgelt>
+    </rechnung>
+</rechnungen>

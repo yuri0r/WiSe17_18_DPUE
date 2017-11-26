@@ -1,0 +1,25 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="mein.namensraum"
+           targetNamespace="mein.namensraum"
+            elementFormDefault="qualified">
+
+    <xs:element name="rechneruebung" type="rechneruebung-type"></xs:element>
+
+    <xs:complexType name="rechneruebung-type">
+        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="aufgabe" type="aufgabe-type"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="aufgabe-type">
+        <xs:sequence>
+            <xs:element name="student" type="student-type"/>
+        </xs:sequence>
+        <xs:attribute name="matriekelnummer" type="xs:decimal" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="student-type">
+
+    </xs:complexType>
+</xs:schema>

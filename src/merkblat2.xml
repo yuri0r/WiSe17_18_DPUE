@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE rechneruebung [
+        <!ELEMENT rechneruebung (aufgabe*)>
+        <!ELEMENT aufgabe (#PCDATA | student)*>
+        <!ELEMENT student (name, (bestanden|nicht-bestanden))>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT bestanden EMPTY>
+        <!ELEMENT nicht-bestanden EMPTY>
+
+        <!ATTLIST rechneruebung name CDATA>
+        <!ATTLIST student matrikelnummer  CDATA>
+
+        ]>
+
+<rechneruebung name="XML"><!-- Attribute ist verpflichtend -->
+    <aufgabe> <!-- beliebig viele aufgabe-Elemente-->
+        1. Aufgabe
+        <!-- mindestsens ein student-Element -->
+        <student matrikelnummer="60000">
+        <!-- Attribute optional -->
+        <!-- genau ein name gefolgt von entweder einem bestanden oder
+        nicht-bestanden-Element -->
+        <name>Arnold Adams</name>
+        <bestanden/>
+    </student>
+    <student matrikelnummer="60001">
+        <name>Anna Albers</name>
+        <bestanden/>
+    </student>
+    </aufgabe>
+    <aufgabe>
+        <!--2. Aufgabe -->
+        <student matrikelnummer="60000">
+            <name>Arnold Adams</name>
+            <nicht-bestanden/>
+        </student>
+    </aufgabe>
+</rechneruebung>

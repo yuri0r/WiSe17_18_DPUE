@@ -1,0 +1,54 @@
+<!ELEMENT rechnungen (rechnung*)>
+<!ELEMENT rechnung (
+        anschrift-des-leistenden-unternehmers,
+        (steuer-nummer-des-leistenden-unternehmers | umsatzsteuer-identifikations-nummer),
+        anschrift-des-leistungs-empfängers,
+        rechnungs-nummer,
+        austellungs-datum,
+        verwendete-waehrung,
+        leistungen,
+        entgelt)>
+<!ELEMENT anschrift-des-leistenden-unternehmers (
+        name-unternehmen,
+        email-adresse?,
+        adresse,
+        telefon-nummer?,
+        fax-nummer?)>
+<!ELEMENT anschrift-des-leistungs-empfängers (
+        name-leistungs-empfänger,
+        adresse)>
+<!ELEMENT austellungs-datum (tag,monat,jahr)>
+<!ELEMENT leistungen (leistung+)> <!-- ja das ist nicht notwendige kapselung-->
+<!ELEMENT entgelt (gesamt-betrag,netto-betrag,mehrwert-steuer-betrag)>
+<!ELEMENT adresse (ort, postleihzahl,straße,haus-nummer)>
+<!ELEMENT name-leistungs-empfänger (vorname,nachname)>
+<!ELEMENT datum (tag,monat,jahr)>
+<!ELEMENT leistung (bezeichnung,(menge,einzel-preis)?, gesamt-preis, mehrwertsteuer-in-prozent, datum?)>
+<!ATTLIST leistung
+            position        CDATA       #IMPLIED>
+
+<!ELEMENT name-unternehmen (#PCDATA)>
+<!ELEMENT email-adresse (#PCDATA)>
+<!ELEMENT ort (#PCDATA)>
+<!ELEMENT postleihzahl (#PCDATA)>
+<!ELEMENT straße (#PCDATA)>
+<!ELEMENT haus-nummer (#PCDATA)>
+<!ELEMENT telefon-nummer (#PCDATA)>
+<!ELEMENT fax-nummer (#PCDATA)>
+<!ELEMENT steuer-nummer-des-leistenden-unternehmers (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT nachname (#PCDATA)>
+<!ELEMENT rechnungs-nummer (#PCDATA)>
+<!ELEMENT tag (#PCDATA)>
+<!ELEMENT monat (#PCDATA)>
+<!ELEMENT jahr (#PCDATA)>
+<!ELEMENT bezeichnung (#PCDATA)>
+<!ELEMENT menge (#PCDATA)>
+<!ELEMENT einzel-preis (#PCDATA)>
+<!ELEMENT gesamt-preis (#PCDATA)>
+<!ELEMENT mehrwertsteuer-in-prozent (#PCDATA)>
+<!ELEMENT gesamt-betrag (#PCDATA)>
+<!ELEMENT netto-betrag (#PCDATA)>
+<!ELEMENT mehrwert-steuer-betrag (#PCDATA)>
+<!ELEMENT umsatzsteuer-identifikations-nummer (#PCDATA)>
+<!ELEMENT verwendete-waehrung (#PCDATA)>

@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding ="UTF-8"?>
+<!DOCTYPE test [
+        <!ELEMENT test (morestuff|otherThings)*>
+        <!ELEMENT morestuff (emty)*>
+        <!ATTLIST morestuff
+                Atribute CDATA #REQUIRED>
+        <!ELEMENT emty (#PCDATA)>
+        <!ELEMENT otherThings (killswitch)*>
+        <!ELEMENT killswitch (mother)*>
+        <!ELEMENT mother (fucker)*>
+        <!ELEMENT fucker (#PCDATA)>
+        ]>
+<test>
+    <morestuff Atribute="heyyyy">
+        things
+        <emty/>
+    </morestuff>
+    <otherThings>
+        pls kill me
+        <killswitch>
+            not me
+            <mother><fucker></fucker></mother>
+        </killswitch>
+    </otherThings>
+</test>
