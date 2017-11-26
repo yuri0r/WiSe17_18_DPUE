@@ -1,7 +1,9 @@
 <?xml version = "1.0" encoding ="UTF-8"?>
-<!DOCTYPE rechnungen PUBLIC "RechnerAufgabe2" "RechnerAufgabe2.dtd">
 <!--matrikel-nummer 57099%7 = 0 =>: Ein Pattern fuer eine E-Mail.-->
-<rechnungen>
+<rechnungen
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="RechnerAufgabe3.xsd">
+
     <rechnung>
         <anschrift-des-leistenden-unternehmers>
             <name-unternehmen>Kleintier Meier GmbH</name-unternehmen>
@@ -12,10 +14,10 @@
                 <straße>Meierring</straße>
                 <haus-nummer>3</haus-nummer>
             </adresse>
-            <telefon-nummer>0777/987987</telefon-nummer>
-            <fax-nummer>0777/987789</fax-nummer>
+            <telefon-nummer>077987987</telefon-nummer>
+            <fax-nummer>0777987789</fax-nummer>
         </anschrift-des-leistenden-unternehmers>
-        <steuer-nummer-des-leistenden-unternehmers>88123/82822</steuer-nummer-des-leistenden-unternehmers>
+        <steuer-nummer-des-leistenden-unternehmers>8812382822</steuer-nummer-des-leistenden-unternehmers>
         <anschrift-des-leistungs-empfängers>
             <name-leistungs-empfänger>
                 <vorname>Sybille</vorname>
@@ -36,7 +38,7 @@
         </austellungs-datum>
         <verwendete-waehrung>euro</verwendete-waehrung>
         <leistungen>
-            <leistung position = "1">
+            <leistung position="1">
                 <bezeichnung>Antike Holzwürmer</bezeichnung>
                 <menge>100</menge>
                 <einzel-preis>1.50</einzel-preis>
@@ -74,7 +76,7 @@
             </leistung>
         </leistungen>
         <entgelt>
-            <gesamt-betrag>962,22</gesamt-betrag>
+            <gesamt-betrag>962.22</gesamt-betrag>
             <netto-betrag>808.59</netto-betrag>
             <mehrwert-steuer-betrag>153.63</mehrwert-steuer-betrag>
         </entgelt>
@@ -99,7 +101,7 @@
             <adresse>
                 <ort>Zottenheim</ort>
                 <postleihzahl>13023</postleihzahl>
-                <straße>Soddelstrudel</straße>
+                <straße>straßestrudel</straße>
                 <haus-nummer>5a</haus-nummer>
             </adresse>
         </anschrift-des-leistungs-empfängers>
@@ -109,7 +111,7 @@
             <monat>8</monat>
             <jahr>2017</jahr>
         </austellungs-datum>
-        <verwendete-waehrung>euro</verwendete-waehrung>
+        <verwendete-waehrung>Euro</verwendete-waehrung>
         <leistungen>
             <leistung>
                 <bezeichnung>Grippemittel "Tumifla"</bezeichnung>
@@ -126,22 +128,69 @@
             <leistung>
                 <bezeichnung>Abführmittel "wech damit" pro liter</bezeichnung>
                 <menge>2 liter</menge>
-                <einzel-preis>99,99</einzel-preis>
-                <gesamt-preis>199,98</gesamt-preis>
+                <einzel-preis>99.99</einzel-preis>
+                <gesamt-preis>199.98</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
             <leistung>
                 <bezeichnung>Energieriegel "Satto"</bezeichnung>
                 <menge>2 stück</menge>
                 <einzel-preis>5.98</einzel-preis>
-                <gesamt-preis>11,96</gesamt-preis>
+                <gesamt-preis>11.96</gesamt-preis>
                 <mehrwertsteuer-in-prozent>7</mehrwertsteuer-in-prozent>
             </leistung>
         </leistungen>
+
         <entgelt>
             <gesamt-betrag>621.94</gesamt-betrag>
             <netto-betrag>490.22</netto-betrag>
             <mehrwert-steuer-betrag>116.74</mehrwert-steuer-betrag>
         </entgelt>
+
     </rechnung>
+
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen></name-unternehmen>
+            <adresse>
+                <ort></ort>
+                <postleihzahl></postleihzahl>
+                <straße></straße>
+                <haus-nummer></haus-nummer>
+            </adresse>
+        </anschrift-des-leistenden-unternehmers>
+        <
+        <anschrift-des-leistungs-empfängers>
+            <name-leistungs-empfänger>
+                <vorname></vorname>
+                <nachname></nachname>
+            </name-leistungs-empfänger>
+            <adresse>
+                <ort></ort>
+                <postleihzahl></postleihzahl>
+                <straße></straße>
+                <haus-nummer></haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfängers>
+        <rechnungs-nummer></rechnungs-nummer>
+        <austellungs-datum>
+            <tag></tag>
+            <monat></monat>
+            <jahr></jahr>
+        </austellungs-datum>
+        <verwendete-waehrung></verwendete-waehrung>
+        <leistungen>
+            <leistung>
+                <bezeichnung></bezeichnung>
+                <gesamt-preis></gesamt-preis>
+                <mehrwertsteuer-in-prozent></mehrwertsteuer-in-prozent>
+            </leistung>
+        </leistungen>
+        <entgelt>
+            <gesamt-betrag></gesamt-betrag>
+            <netto-betrag></netto-betrag>
+            <mehrwert-steuer-betrag></mehrwert-steuer-betrag>
+        </entgelt>
+    </rechnung>
+
 </rechnungen>
