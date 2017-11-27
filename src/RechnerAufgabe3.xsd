@@ -146,7 +146,13 @@
     </xs:element>
 
 
-    <xs:element name="email-adresse" type="xs:string"/>
+    <xs:element name="email-adresse" type="email-type"/>
+    <xs:simpleType name="email-type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(([0-9a-zA-Z.])*[0-9a-zA-Z]+)[@][0-9a-zA-Z]+[.][0-9a-zA-Z]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
 
     <xs:element name="blz" type="xs:string"/>
     <xs:element name="bitcoin" type="xs:string"/>
