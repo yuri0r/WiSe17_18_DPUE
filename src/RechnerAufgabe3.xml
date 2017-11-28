@@ -1,8 +1,9 @@
 <?xml version = "1.0" encoding ="UTF-8"?>
 <!--matrikel-nummer 57099%7 = 0 =>: Ein Pattern fuer eine E-Mail.-->
 <rechnungen
+              xmlns = "genericNamespace"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:noNamespaceSchemaLocation="RechnerAufgabe3.xsd">
+              xsi:schemaLocation="genericNamespace RechnerAufgabe3.xsd">
 
     <rechnung>
         <anschrift-des-leistenden-unternehmers>
@@ -11,25 +12,25 @@
             <adresse>
                 <ort>Machthausen</ort>
                 <postleihzahl>81828</postleihzahl>
-                <straße>Meierring</straße>
+                <strasze>Meierring</strasze>
                 <haus-nummer>3</haus-nummer>
             </adresse>
             <telefon-nummer>077987987</telefon-nummer>
             <fax-nummer>0777987789</fax-nummer>
         </anschrift-des-leistenden-unternehmers>
         <steuer-nummer-des-leistenden-unternehmers>8812382822</steuer-nummer-des-leistenden-unternehmers>
-        <anschrift-des-leistungs-empfängers>
-            <name-leistungs-empfänger>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
                 <vorname>Sybille</vorname>
                 <nachname>Sonder-Suttelrau</nachname>
-            </name-leistungs-empfänger>
+            </name-leistungs-empfaenger>
             <adresse>
                 <ort>Siedelsuderstadt</ort>
                 <postleihzahl>77070</postleihzahl>
-                <straße>Am Süttelbach</straße>
+                <strasze>Am Suettelbach</strasze>
                 <haus-nummer>17</haus-nummer>
             </adresse>
-        </anschrift-des-leistungs-empfängers>
+        </anschrift-des-leistungs-empfaengers>
         <rechnungs-nummer>657321</rechnungs-nummer>
         <austellungs-datum>
             <tag>15</tag>
@@ -39,7 +40,7 @@
         <verwendete-waehrung>euro</verwendete-waehrung>
         <leistungen>
             <leistung position="1">
-                <bezeichnung>Antike Holzwürmer</bezeichnung>
+                <bezeichnung>Antike Holzwuermer</bezeichnung>
                 <menge>100</menge>
                 <einzel-preis>1.50</einzel-preis>
                 <gesamt-preis>150.00</gesamt-preis>
@@ -96,23 +97,23 @@
             <adresse>
                 <ort>Grenzye-Wahlen</ort>
                 <postleihzahl>79639</postleihzahl>
-                <straße>An der Chemie</straße>
+                <strasze>An der Chemie</strasze>
                 <haus-nummer>17</haus-nummer>
             </adresse>
         </anschrift-des-leistenden-unternehmers>
         <umsatzsteuer-identifikations-nummer>DE333666999</umsatzsteuer-identifikations-nummer>
-        <anschrift-des-leistungs-empfängers>
-            <name-leistungs-empfänger>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
                 <vorname>Cypirian</vorname>
                 <nachname>Zottel</nachname>
-            </name-leistungs-empfänger>
+            </name-leistungs-empfaenger>
             <adresse>
                 <ort>Zottenheim</ort>
                 <postleihzahl>13023</postleihzahl>
-                <straße>straßestrudel</straße>
+                <strasze>straßestrudel</strasze>
                 <haus-nummer>5a</haus-nummer>
             </adresse>
-        </anschrift-des-leistungs-empfängers>
+        </anschrift-des-leistungs-empfaengers>
         <rechnungs-nummer>98-798-7987</rechnungs-nummer>
         <austellungs-datum>
             <tag>8</tag>
@@ -134,7 +135,7 @@
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
             <leistung>
-                <bezeichnung>Abführmittel "wech damit" pro liter</bezeichnung>
+                <bezeichnung>Abfuehrmittel "wech damit" pro liter</bezeichnung>
                 <menge>2 liter</menge>
                 <einzel-preis>99.99</einzel-preis>
                 <gesamt-preis>199.98</gesamt-preis>
@@ -142,7 +143,7 @@
             </leistung>
             <leistung>
                 <bezeichnung>Energieriegel "Satto"</bezeichnung>
-                <menge>2 stück</menge>
+                <menge>2 stueck</menge>
                 <einzel-preis>5.98</einzel-preis>
                 <gesamt-preis>11.96</gesamt-preis>
                 <mehrwertsteuer-in-prozent>7</mehrwertsteuer-in-prozent>
@@ -170,23 +171,23 @@
             <adresse>
                 <ort>ultersingen</ort>
                 <postleihzahl>55215</postleihzahl>
-                <straße>oberbergweg</straße>
+                <strasze>oberbergweg</strasze>
                 <haus-nummer>5</haus-nummer>
             </adresse>
         </anschrift-des-leistenden-unternehmers>
         <umsatzsteuer-identifikations-nummer>DE6435458435454354</umsatzsteuer-identifikations-nummer>
-        <anschrift-des-leistungs-empfängers>
-            <name-leistungs-empfänger>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
                 <vorname>Familie</vorname>
                 <nachname>Urmel</nachname>
-            </name-leistungs-empfänger>
+            </name-leistungs-empfaenger>
             <adresse>
                 <ort>ultersingen</ort>
                 <postleihzahl>58168</postleihzahl>
-                <straße>ulternstarße</straße>
+                <strasze>ulternstarße</strasze>
                 <haus-nummer>764</haus-nummer>
             </adresse>
-        </anschrift-des-leistungs-empfängers>
+        </anschrift-des-leistungs-empfaengers>
         <rechnungs-nummer>58632125</rechnungs-nummer>
         <austellungs-datum>
             <tag>19</tag>
@@ -200,19 +201,16 @@
                 <gesamt-preis>299.99</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            
             <leistung>
                 <bezeichnung>ueberfuerung krematorium</bezeichnung>
                 <gesamt-preis>349.00</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            
             <leistung>
                 <bezeichnung>dekoration</bezeichnung>
                 <gesamt-preis>149.50</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            
             <leistung>
                 <bezeichnung>trauerkarten</bezeichnung>
                 <menge>40</menge>
@@ -226,7 +224,6 @@
             <netto-betrag>783.23</netto-betrag>
             <mehrwert-steuer-betrag>140.26</mehrwert-steuer-betrag>
         </entgelt>
-
         <bezahl-moeglichkeiten>
             <bankverbindung>
                 <iban>6845486545648</iban>
