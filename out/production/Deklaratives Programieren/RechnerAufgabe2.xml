@@ -1,0 +1,144 @@
+<?xml version = "1.0" encoding ="UTF-8"?>
+<!DOCTYPE rechnungen SYSTEM "RechnerAufgabe2.dtd">
+<!--matrikel-nummer 57099%5 = 4 =>: Das Datum einer Position, ansonsten ein Element-->
+<rechnungen>
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>Kleintier Meier GmbH</name-unternehmen>
+            <email-adresse>klein.meier@tiere.de</email-adresse>
+            <adresse>
+                <ort>Machthausen</ort>
+                <postleihzahl>81828</postleihzahl>
+                <straße>Meierring</straße>
+                <haus-nummer>3</haus-nummer>
+            </adresse>
+            <telefon-nummer>0777/987987</telefon-nummer>
+            <fax-nummer>0777/987789</fax-nummer>
+            <steuer-nummer-des-leistenden-unternehmers>88123/82822</steuer-nummer-des-leistenden-unternehmers>
+        </anschrift-des-leistenden-unternehmers>
+        <anschrift-des-leistungs-empfängers>
+            <name-leistungs-empfänger>
+                <vorname>Sybille</vorname>
+                <nachname>Sonder-Suttelrau</nachname>
+            </name-leistungs-empfänger>
+            <adresse>
+                <ort>Siedelsuderstadt</ort>
+                <postleihzahl>77070</postleihzahl>
+                <straße>Am Süttelbach</straße>
+                <haus-nummer>17</haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfängers>
+        <rechnungs-nummer>657321</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>15</tag>
+            <monat>1</monat>
+            <jahr>2017</jahr>
+        </austellungs-datum>
+        <leistungen>
+            <leistung position = "1">
+                <bezeichnung>Antike Holzwürmer</bezeichnung>
+                <menge>100</menge>
+                <einzel-preis>1.50</einzel-preis>
+                <gesamt-preis>150.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+                <datum>
+                    <tag>1</tag>
+                    <monat>1</monat>
+                    <jahr>2017</jahr>
+                </datum>
+            </leistung>
+            <leistung position="2">
+                <bezeichnung>Holzwurmfutter</bezeichnung>
+                <menge>1</menge>
+                <einzel-preis>34.45</einzel-preis>
+                <gesamt-preis>34.45</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+                <datum>
+                    <tag>12</tag>
+                    <monat>1</monat>
+                    <jahr>2017</jahr>
+                </datum>
+            </leistung>
+            <leistung position="3">
+                <bezeichnung>Steinlaus Petrophaga lorioti</bezeichnung>
+                <menge>1</menge>
+                <einzel-preis>777.77</einzel-preis>
+                <gesamt-preis>777.77</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+                <datum>
+                    <tag>12</tag>
+                    <monat>1</monat>
+                    <jahr>2017</jahr>
+                </datum>
+            </leistung>
+        </leistungen>
+        <entgelt>
+            <gesamt-betrag>962,22</gesamt-betrag>
+            <netto-betrag>808.59</netto-betrag>
+            <mehrwert-steuer-betrag>153.63</mehrwert-steuer-betrag>
+        </entgelt>
+    </rechnung>
+
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>Rochaden-La Hoff Pharma GmbH</name-unternehmen>
+            <adresse>
+                <ort>Grenzye-Wahlen</ort>
+                <postleihzahl>79639</postleihzahl>
+                <straße>An der Chemie</straße>
+                <haus-nummer>17</haus-nummer>
+            </adresse>
+            <umsatzsteuer-identifikations-nummer>DE333666999</umsatzsteuer-identifikations-nummer>
+        </anschrift-des-leistenden-unternehmers>
+        <anschrift-des-leistungs-empfängers>
+            <name-leistungs-empfänger>
+                <vorname>Cypirian</vorname>
+                <nachname>Zottel</nachname>
+            </name-leistungs-empfänger>
+            <adresse>
+                <ort>Zottenheim</ort>
+                <postleihzahl>13023</postleihzahl>
+                <straße>Soddelstrudel</straße>
+                <haus-nummer>5a</haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfängers>
+        <rechnungs-nummer>98-798-7987</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>8</tag>
+            <monat>8</monat>
+            <jahr>2017</jahr>
+        </austellungs-datum>
+        <leistungen>
+            <leistung>
+                <bezeichnung>Grippemittel "Tumifla"</bezeichnung>
+                <menge>3</menge>
+                <einzel-preis>120.00</einzel-preis>
+                <gesamt-preis>360.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung>
+                <bezeichnung>beratung pauschal</bezeichnung>
+                <gesamt-preis>50</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung>
+                <bezeichnung>Abführmittel "wech damit" pro liter</bezeichnung>
+                <menge>2 liter</menge>
+                <einzel-preis>99,99</einzel-preis>
+                <gesamt-preis>199,98</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung>
+                <bezeichnung>Energieriegel "Satto"</bezeichnung>
+                <menge>2 stück</menge>
+                <einzel-preis>5.98</einzel-preis>
+                <gesamt-preis>11,96</gesamt-preis>
+            </leistung>
+        </leistungen>
+        <entgelt>
+            <gesamt-betrag>621.94</gesamt-betrag>
+            <netto-betrag>490.22</netto-betrag>
+            <mehrwert-steuer-betrag>116.74</mehrwert-steuer-betrag>
+        </entgelt>
+    </rechnung>
+</rechnungen>

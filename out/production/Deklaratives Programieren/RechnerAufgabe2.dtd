@@ -1,0 +1,4 @@
+<!DOCTYPE rechnungen [
+        <!ELEMENT rechnungen (rechnung*)>
+        <!ELEMENT rechnung ()>
+        ]>
