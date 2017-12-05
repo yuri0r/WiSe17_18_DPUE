@@ -82,10 +82,10 @@ public class rechnerAufgabe4 {
         StringBuffer buffer = new StringBuffer();
 
         if (bank.getBank() != null) buffer.append(bank.getBank() + ", ");
+        if (bank.getKontoNr() != null) buffer.append(bank.getKontoNr() + ", ");
         if (bank.getBic() != null) buffer.append(bank.getBic() + ", ");
         if (bank.getBlz() != null) buffer.append(bank.getBlz() + ", ");
         if (bank.getIban() != null) buffer.append(bank.getIban() + ", ");
-        if (bank.getKontoNr() != null) buffer.append(bank.getKontoNr() + ", ");
 
 
         if (buffer != null) {
