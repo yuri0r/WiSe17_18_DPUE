@@ -21,6 +21,7 @@
         <steuer-nummer-des-leistenden-unternehmers>8812382822</steuer-nummer-des-leistenden-unternehmers>
         <anschrift-des-leistungs-empfaengers>
             <name-leistungs-empfaenger>
+                <anrede>Frau</anrede>
                 <vorname>Sybille</vorname>
                 <nachname>Sonder-Suttelrau</nachname>
             </name-leistungs-empfaenger>
@@ -41,7 +42,7 @@
         <leistungen>
             <leistung position="1">
                 <bezeichnung>Antike Holzwuermer</bezeichnung>
-                <menge>100</menge>
+                <mengen-anzahl>100</mengen-anzahl>
                 <einzel-preis>1.50</einzel-preis>
                 <gesamt-preis>150.00</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
@@ -53,7 +54,7 @@
             </leistung>
             <leistung position="2">
                 <bezeichnung>Holzwurmfutter</bezeichnung>
-                <menge>1</menge>
+                <mengen-anzahl>1</mengen-anzahl>
                 <einzel-preis>34.45</einzel-preis>
                 <gesamt-preis>34.45</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
@@ -65,7 +66,7 @@
             </leistung>
             <leistung position="3">
                 <bezeichnung>Steinlaus Petrophaga lorioti</bezeichnung>
-                <menge>1</menge>
+                <mengen-bezeichnung>1</mengen-bezeichnung>
                 <einzel-preis>777.77</einzel-preis>
                 <gesamt-preis>777.77</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
@@ -104,6 +105,7 @@
         <umsatzsteuer-identifikations-nummer>DE333666999</umsatzsteuer-identifikations-nummer>
         <anschrift-des-leistungs-empfaengers>
             <name-leistungs-empfaenger>
+                <anrede>Dr.med</anrede>
                 <vorname>Cypirian</vorname>
                 <nachname>Zottel</nachname>
             </name-leistungs-empfaenger>
@@ -124,7 +126,7 @@
         <leistungen>
             <leistung>
                 <bezeichnung>Grippemittel "Tumifla"</bezeichnung>
-                <menge>3</menge>
+                <mengen-bezeichnung>3</mengen-bezeichnung>
                 <einzel-preis>120.00</einzel-preis>
                 <gesamt-preis>360.00</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
@@ -136,14 +138,16 @@
             </leistung>
             <leistung>
                 <bezeichnung>Abfuehrmittel "wech damit" pro liter</bezeichnung>
-                <menge>2 liter</menge>
+                <mengen-anzahl>2</mengen-anzahl>
+                <mengen-bezeichnung>liter</mengen-bezeichnung>
                 <einzel-preis>99.99</einzel-preis>
                 <gesamt-preis>199.98</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
             <leistung>
                 <bezeichnung>Energieriegel "Satto"</bezeichnung>
-                <menge>2 stueck</menge>
+                <mengen-anzahl>2</mengen-anzahl>
+                <mengen-bezeichnung>stueck</mengen-bezeichnung>
                 <einzel-preis>5.98</einzel-preis>
                 <gesamt-preis>11.96</gesamt-preis>
                 <mehrwertsteuer-in-prozent>7</mehrwertsteuer-in-prozent>
@@ -178,7 +182,8 @@
         <umsatzsteuer-identifikations-nummer>DE6435458435454354</umsatzsteuer-identifikations-nummer>
         <anschrift-des-leistungs-empfaengers>
             <name-leistungs-empfaenger>
-                <vorname>Familie</vorname>
+                <anrede>Familie</anrede>
+                <vorname></vorname>
                 <nachname>Urmel</nachname>
             </name-leistungs-empfaenger>
             <adresse>
@@ -213,7 +218,7 @@
             </leistung>
             <leistung>
                 <bezeichnung>trauerkarten</bezeichnung>
-                <menge>40</menge>
+                <mengen-anzahl>40</mengen-anzahl>
                 <einzel-preis>20.00</einzel-preis>
                 <gesamt-preis>80.00</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
@@ -246,6 +251,7 @@
         <umsatzsteuer-identifikations-nummer>DE123456789</umsatzsteuer-identifikations-nummer>
         <anschrift-des-leistungs-empfaengers>
             <name-leistungs-empfaenger>
+                <anrede>Seine Exzellenz der Hochwürdigste Herr Erzbischof</anrede>
                 <vorname>Waldus</vorname>
                 <nachname>Mikksa</nachname>
             </name-leistungs-empfaenger>
@@ -266,13 +272,15 @@
         <leistungen>
             <leistung>
                 <bezeichnung>Liebliche Gottesmilbe</bezeichnung>
-                <menge>1 Fass</menge>
+                <mengen-anzahl>1</mengen-anzahl>
+                <mengen-bezeichnung>Fass</mengen-bezeichnung>
                 <gesamt-preis>2299.98</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
             <leistung>
                 <bezeichnung>Standardweinglaeser "Schluck"</bezeichnung>
-                <menge>100 Stueck</menge>
+                <mengen-anzahl>100</mengen-anzahl>
+                <mengen-bezeichnung>Stueck</mengen-bezeichnung>
                 <gesamt-preis>59.90</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>

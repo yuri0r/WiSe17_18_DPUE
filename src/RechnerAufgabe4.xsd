@@ -95,6 +95,7 @@
     <xs:element name="name-leistungs-empfaenger">
         <xs:complexType>
             <xs:sequence>
+                <xs:element ref="anrede"/>
                 <xs:element ref="vorname"/>
                 <xs:element ref="nachname"/>
             </xs:sequence>
@@ -115,7 +116,8 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element ref="bezeichnung"/>
-                <xs:element ref="menge" minOccurs="0"/>
+                <xs:element ref="mengen-anzahl" minOccurs="0"/>
+                <xs:element ref="mengen-bezeichnung" minOccurs="0"/>
                 <xs:element ref="einzel-preis" minOccurs="0"/>
                 <xs:element ref="gesamt-preis"/>
                 <xs:element ref="mehrwertsteuer-in-prozent"/>
@@ -169,6 +171,7 @@
     <xs:element name="telefon-nummer" type="xs:decimal"/>
     <xs:element name="fax-nummer" type="xs:decimal"/>
     <xs:element name="steuer-nummer-des-leistenden-unternehmers" type="xs:decimal"/>
+    <xs:element name="anrede" type="xs:string"/>
     <xs:element name="vorname" type="xs:string"/>
     <xs:element name="nachname" type="xs:string"/>
     <xs:element name="rechnungs-nummer" type="xs:string"/>
@@ -176,7 +179,8 @@
     <xs:element name="monat" type="xs:decimal"/>
     <xs:element name="jahr" type="xs:decimal"/>
     <xs:element name="bezeichnung" type="xs:string"/>
-    <xs:element name="menge" type="xs:string"/>
+    <xs:element name="mengen-anzahl" type="xs:decimal"/>
+    <xs:element name="mengen-bezeichnung" type="xs:string"/>
     <xs:element name="einzel-preis" type="xs:decimal"/>
     <xs:element name="gesamt-preis" type="xs:decimal"/>
     <xs:element name="mehrwertsteuer-in-prozent" type="xs:decimal"/>

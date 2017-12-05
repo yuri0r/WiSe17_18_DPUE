@@ -16,7 +16,7 @@ public class rechnerAufgabe4 {
         NameLeistungsEmpfaenger leistungsEmpfaenger;
         AnschriftDesLeistendenUnternehmers unternehmen;
 
-        String anrede;
+        String angruesung;
         String kontaktText;
         String abgruesung;
         String nameLeistungsEmpfaenger;
@@ -34,7 +34,7 @@ public class rechnerAufgabe4 {
             leistungsEmpfaenger = rechnung.getAnschriftDesLeistungsEmpfaengers().getNameLeistungsEmpfaenger();
             unternehmen = rechnung.getAnschriftDesLeistendenUnternehmers();
 
-            nameLeistungsEmpfaenger = leistungsEmpfaenger.getVorname() + " " + leistungsEmpfaenger.getNachname();
+            nameLeistungsEmpfaenger = leistungsEmpfaenger.getAnrede() + " " + leistungsEmpfaenger.getVorname() + " " + leistungsEmpfaenger.getNachname();
             nameLeistungsBringer = unternehmen.getNameUnternehmen();
             nettoBetrag = rechnung.getEntgelt().getNettoBetrag().toString();
             waehrung = rechnung.getVerwendeteWaehrung();
@@ -50,7 +50,7 @@ public class rechnerAufgabe4 {
             }
 
             //textErzeugung*********************************************************************************************
-            anrede = String.format(
+            angruesung = String.format(
                     "%s\n" +
                             "Bitte zahlen Sie endlich den geforderten Betrag\n" +
                             "von %s %s auf das Konto\n" +
@@ -70,9 +70,9 @@ public class rechnerAufgabe4 {
                             "%s", nameLeistungsBringer);
 
             if (telefonVorhanden) {
-                System.out.println(anrede + kontaktText + abgruesung + " \n");
+                System.out.println(angruesung + kontaktText + abgruesung + " \n");
             } else {
-                System.out.println(anrede + abgruesung + " \n");
+                System.out.println(angruesung + abgruesung + " \n");
             }
         }
     }
