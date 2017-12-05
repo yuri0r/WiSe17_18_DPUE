@@ -5,11 +5,16 @@ import java.io.File;
 
 public class rechnerAufgabe4 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         JAXBContext context = null;
         Unmarshaller unmarshaller = null;
         Rechnungen rechnungen = null;
+
+        context = JAXBContext.newInstance("rechnerAufgabe4.jaxb");
+        unmarshaller = context.createUnmarshaller();
+        rechnungen = (Rechnungen) JAXBIntrospector.getValue(unmarshaller.unmarshal(
+                new File("src/RechnerAufgabe4.xml")));
 
         Bankverbindung bank;
         NameLeistungsEmpfaenger leistungsEmpfaenger;
@@ -27,19 +32,6 @@ public class rechnerAufgabe4 {
         String zahlungsArt;
         String komma = ", ";
 
-
-        try {
-            context = JAXBContext.newInstance("rechnerAufgabe4.jaxb");
-            unmarshaller = context.createUnmarshaller();
-            rechnungen = (Rechnungen) JAXBIntrospector.getValue(unmarshaller.unmarshal(
-                    new File("src/RechnerAufgabe4.xml")));
-
-        } catch (JAXBException e) {
-            e.printStackTrace();
-            System.exit(1);
-        }
-
-
         for (Rechnung rechnung : rechnungen.getRechnung()) {
 
             //variablen pro rechnung initialisieren*********************************************************************
@@ -52,10 +44,7 @@ public class rechnerAufgabe4 {
             nettoBetrag = rechnung.getEntgelt().getNettoBetrag().toString();
             waehrung = rechnung.getVerwendeteWaehrung();
             bank = rechnung.getBezahlMoeglichkeiten().getBankverbindung();
-            zahlungsArt = bank.getBank() + komma +
-                    bank.getBic() + komma +
-                    bank.getBlz() + komma +
-                    bank.getKontoNr();
+            zahlungsArt = createZahlungsart(bank);
 
             if (rechnung.getAnschriftDesLeistendenUnternehmers().getTelefonNummer() == null) {
                 telefon = "";
@@ -74,7 +63,6 @@ public class rechnerAufgabe4 {
                     , nameLeistungsEmpfaenger, nettoBetrag, waehrung, zahlungsArt);
 
 
-
             kontaktText = String.format(
                     "Falls Sie trotzdem noch unverschämt genug sind\n" +
                             "und Fragen haben, dann können Sie mich jederzeit\n" +
@@ -86,11 +74,31 @@ public class rechnerAufgabe4 {
                     "Hochachtungsvoll\n" +
                             "%s", nameLeistungsBringer);
 
-            if (telefonVorhanden){
+            if (telefonVorhanden) {
                 System.out.println(anrede + kontaktText + abgruesung + " \n");
             } else {
                 System.out.println(anrede + abgruesung + " \n");
             }
         }
+    }
+
+    private static String createZahlungsart(Bankverbindung bank) {
+
+        StringBuffer buffer = new StringBuffer();
+
+        if (bank.getBank() != null) buffer.append(bank.getBank() + ", ");
+        if (bank.getBic() != null) buffer.append(bank.getBic() + ", ");
+        if (bank.getBlz() != null) buffer.append(bank.getBlz() + ", ");
+        if (bank.getIban() != null) buffer.append(bank.getIban() + ", ");
+        if (bank.getKontoNr() != null) buffer.append(bank.getKontoNr() + ", ");
+
+
+        if (buffer != null) {
+            buffer.deleteCharAt(buffer.length() - 2);
+            return buffer.toString().trim();
+        } else {
+            return "";
+        }
+
     }
 }
