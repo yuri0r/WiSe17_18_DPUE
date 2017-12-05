@@ -5,72 +5,92 @@ import java.io.File;
 
 public class rechnerAufgabe4 {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         JAXBContext context = null;
         Unmarshaller unmarshaller = null;
-        Rechnungen rechnungen= null;
-        String text1;
-        String text2;
-        String text3;
-        String name1;
+        Rechnungen rechnungen = null;
+
+        Bankverbindung bank;
+        NameLeistungsEmpfaenger leistungsEmpfaenger;
+        AnschriftDesLeistendenUnternehmers unternehmen;
+
+        String anrede;
+        String kontaktText;
+        String abgruesung;
+        String nameLeistungsEmpfaenger;
+        String nameLeistungsBringer;
         String nettoBetrag;
         String waehrung;
         String telefon;
-        String name2;
+        boolean telefonVorhanden;
         String zahlungsArt;
+        String komma = ", ";
+
 
         try {
             context = JAXBContext.newInstance("rechnerAufgabe4.jaxb");
             unmarshaller = context.createUnmarshaller();
-            rechnungen = (Rechnungen) JAXBIntrospector.getValue(unmarshaller.unmarshal(new File("src/RechnerAufgabe4.xml")));
+            rechnungen = (Rechnungen) JAXBIntrospector.getValue(unmarshaller.unmarshal(
+                    new File("src/RechnerAufgabe4.xml")));
 
         } catch (JAXBException e) {
             e.printStackTrace();
+            System.exit(1);
         }
 
 
-        for (Rechnung rechnung: rechnungen.getRechnung()) {
+        for (Rechnung rechnung : rechnungen.getRechnung()) {
 
-            name1 = rechnung.getAnschriftDesLeistungsEmpfaengers().getNameLeistungsEmpfaenger().getVorname() +
-                    " " +
-                    rechnung.getAnschriftDesLeistungsEmpfaengers().getNameLeistungsEmpfaenger().getNachname();
+            //variablen pro rechnung initialisieren*********************************************************************
+            bank = rechnung.getBezahlMoeglichkeiten().getBankverbindung();
+            leistungsEmpfaenger = rechnung.getAnschriftDesLeistungsEmpfaengers().getNameLeistungsEmpfaenger();
+            unternehmen = rechnung.getAnschriftDesLeistendenUnternehmers();
 
-            name2 = rechnung.getAnschriftDesLeistendenUnternehmers().getNameUnternehmen();
+            nameLeistungsEmpfaenger = leistungsEmpfaenger.getVorname() + " " + leistungsEmpfaenger.getNachname();
+            nameLeistungsBringer = unternehmen.getNameUnternehmen();
             nettoBetrag = rechnung.getEntgelt().getNettoBetrag().toString();
             waehrung = rechnung.getVerwendeteWaehrung();
+            bank = rechnung.getBezahlMoeglichkeiten().getBankverbindung();
+            zahlungsArt = bank.getBank() + komma +
+                    bank.getBic() + komma +
+                    bank.getBlz() + komma +
+                    bank.getKontoNr();
 
-            Bankverbindung bank = rechnung.getBezahlMoeglichkeiten().getBankverbindung();
+            if (rechnung.getAnschriftDesLeistendenUnternehmers().getTelefonNummer() == null) {
+                telefon = "";
+                telefonVorhanden = false;
+            } else {
+                telefon = rechnung.getAnschriftDesLeistendenUnternehmers().getTelefonNummer().toString();
+                telefonVorhanden = true;
+            }
 
-            zahlungsArt = bank.getBank() + bank.getBic() + bank.getBlz() + bank.getKontoNr();
-
-            text1 = String.format(
+            //textErzeugung*********************************************************************************************
+            anrede = String.format(
                     "%s\n" +
                             "Bitte zahlen Sie endlich den geforderten Betrag\n" +
                             "von %s %s auf das Konto\n" +
                             "%s ein.\n"
-                            ,name1,nettoBetrag,waehrung,zahlungsArt);
+                    , nameLeistungsEmpfaenger, nettoBetrag, waehrung, zahlungsArt);
 
-            if (rechnung.getAnschriftDesLeistendenUnternehmers().getTelefonNummer() == null) {
-                telefon = "";
-                text2 = "";
-            } else {
-                telefon = rechnung.getAnschriftDesLeistendenUnternehmers().getTelefonNummer().toString();
-            }
-            text2 = String.format(
+
+
+            kontaktText = String.format(
                     "Falls Sie trotzdem noch unverschämt genug sind\n" +
                             "und Fragen haben, dann können Sie mich jederzeit\n" +
                             "unter %s erreichen.\n"
-                           ,telefon);
+                    , telefon);
 
 
-            text3 = String.format(
+            abgruesung = String.format(
                     "Hochachtungsvoll\n" +
-                            "%s",name2);
+                            "%s", nameLeistungsBringer);
 
-
-
-            System.out.println( text1 + text2 + text3 + " \n");
+            if (telefonVorhanden){
+                System.out.println(anrede + kontaktText + abgruesung + " \n");
+            } else {
+                System.out.println(anrede + abgruesung + " \n");
+            }
         }
     }
 }
