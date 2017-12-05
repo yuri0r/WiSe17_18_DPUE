@@ -7,13 +7,9 @@ public class rechnerAufgabe4 {
 
     public static void main(String[] args) throws Exception {
 
-        JAXBContext context = null;
-        Unmarshaller unmarshaller = null;
-        Rechnungen rechnungen = null;
-
-        context = JAXBContext.newInstance("rechnerAufgabe4.jaxb");
-        unmarshaller = context.createUnmarshaller();
-        rechnungen = (Rechnungen) JAXBIntrospector.getValue(unmarshaller.unmarshal(
+        JAXBContext context = JAXBContext.newInstance("rechnerAufgabe4.jaxb");
+        Unmarshaller unmarshaller = context.createUnmarshaller();
+        Rechnungen rechnungen = (Rechnungen) JAXBIntrospector.getValue(unmarshaller.unmarshal(
                 new File("src/RechnerAufgabe4.xml")));
 
         Bankverbindung bank;
@@ -30,7 +26,6 @@ public class rechnerAufgabe4 {
         String telefon;
         boolean telefonVorhanden;
         String zahlungsArt;
-        String komma = ", ";
 
         for (Rechnung rechnung : rechnungen.getRechnung()) {
 
