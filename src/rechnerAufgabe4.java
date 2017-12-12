@@ -31,7 +31,7 @@ public class rechnerAufgabe4 {
 
             for (Rechnung rechnung : rechnungen.getRechnung()) {
 
-                //variablen pro rechnung initialisieren*********************************************************************
+                //variablen pro rechnung initialisieren*****************************************************************
                 bank = rechnung.getBezahlMoeglichkeiten().getBankverbindung();
                 leistungsEmpfaenger = rechnung.getAnschriftDesLeistungsEmpfaengers().getNameLeistungsEmpfaenger();
                 unternehmen = rechnung.getAnschriftDesLeistendenUnternehmers();
@@ -52,7 +52,7 @@ public class rechnerAufgabe4 {
                     telefonVorhanden = true;
                 }
 
-                //textErzeugung*********************************************************************************************
+                //textErzeugung*****************************************************************************************
                 angruesung = String.format(
                         "%s\n" +
                                 "Bitte zahlen Sie endlich den geforderten Betrag\n" +
@@ -72,6 +72,7 @@ public class rechnerAufgabe4 {
                         "Hochachtungsvoll\n" +
                                 "%s", nameLeistungsBringer);
 
+                //textausgabe*******************************************************************************************
                 if (telefonVorhanden) {
                     System.out.println(angruesung + kontaktText + abgruesung + " \n");
                 } else {
