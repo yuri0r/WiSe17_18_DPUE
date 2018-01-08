@@ -1,7 +1,5 @@
 <xs:schema
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
-        xmlns="genericNamespace"
-        targetNamespace="genericNamespace"
         elementFormDefault="qualified">
 
 

@@ -1,9 +1,8 @@
 <?xml version = "1.0" encoding ="UTF-8"?>
 
 <rechnungen
-        xmlns = "genericNamespace"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="genericNamespace RechnerAufgabe5.xsd">
+        xsi:noNamespaceSchemaLocation="RechnerAufgabe5.xsd">
 
     <rechnung>
         <anschrift-des-leistenden-unternehmers>
@@ -124,19 +123,19 @@
         </austellungs-datum>
         <verwendete-waehrung>Euro</verwendete-waehrung>
         <leistungen>
-            <leistung>
+            <leistung position="1">
                 <bezeichnung>Grippemittel "Tumifla"</bezeichnung>
                 <mengen-bezeichnung>3</mengen-bezeichnung>
                 <einzel-preis>120.00</einzel-preis>
                 <gesamt-preis>360.00</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            <leistung>
+            <leistung position="2">
                 <bezeichnung>beratung pauschal</bezeichnung>
                 <gesamt-preis>50</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            <leistung>
+            <leistung position="3">
                 <bezeichnung>Abfuehrmittel "wech damit" pro liter</bezeichnung>
                 <mengen-anzahl>2</mengen-anzahl>
                 <mengen-bezeichnung>liter</mengen-bezeichnung>
@@ -144,7 +143,7 @@
                 <gesamt-preis>199.98</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            <leistung>
+            <leistung position="4">
                 <bezeichnung>Energieriegel "Satto"</bezeichnung>
                 <mengen-anzahl>2</mengen-anzahl>
                 <mengen-bezeichnung>stueck</mengen-bezeichnung>
@@ -199,24 +198,24 @@
             <monat>7</monat>
             <jahr>2017</jahr>
         </austellungs-datum>
-        <verwendete-waehrung></verwendete-waehrung>
+        <verwendete-waehrung>euro</verwendete-waehrung>
         <leistungen>
-            <leistung>
+            <leistung position="1">
                 <bezeichnung>urne eiche massive</bezeichnung>
                 <gesamt-preis>299.99</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            <leistung>
+            <leistung position="2">
                 <bezeichnung>ueberfuerung krematorium</bezeichnung>
                 <gesamt-preis>349.00</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            <leistung>
+            <leistung position="3 ">
                 <bezeichnung>dekoration</bezeichnung>
                 <gesamt-preis>149.50</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            <leistung>
+            <leistung position="4">
                 <bezeichnung>trauerkarten</bezeichnung>
                 <mengen-anzahl>40</mengen-anzahl>
                 <einzel-preis>20.00</einzel-preis>
@@ -270,14 +269,14 @@
         </austellungs-datum>
         <verwendete-waehrung>euro</verwendete-waehrung>
         <leistungen>
-            <leistung>
+            <leistung position="1">
                 <bezeichnung>Liebliche Gottesmilbe</bezeichnung>
                 <mengen-anzahl>1</mengen-anzahl>
                 <mengen-bezeichnung>Fass</mengen-bezeichnung>
                 <gesamt-preis>2299.98</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
             </leistung>
-            <leistung>
+            <leistung position="2">
                 <bezeichnung>Standardweinglaeser "Schluck"</bezeichnung>
                 <mengen-anzahl>100</mengen-anzahl>
                 <mengen-bezeichnung>Stueck</mengen-bezeichnung>
@@ -330,12 +329,12 @@
         </austellungs-datum>
         <verwendete-waehrung>Euro</verwendete-waehrung>
         <leistungen>
-            <leistung>
+            <leistung position="1">
                 <bezeichnung>Vogelschnepper, um 1600</bezeichnung>
                 <gesamt-preis>3499.00</gesamt-preis>
                 <mehrwertsteuer-in-prozent>0</mehrwertsteuer-in-prozent>
             </leistung>
-            <leistung>
+            <leistung position="2">
                 <bezeichnung>Schusser, um 1720</bezeichnung>
                 <mengen-anzahl>200</mengen-anzahl>
                 <gesamt-preis>99.99</gesamt-preis>
@@ -347,14 +346,34 @@
         </entgelt>
         <bezahl-moeglichkeiten></bezahl-moeglichkeiten>
     </rechnung>
-    <!--
-    Show View -> Other -> XPath
-    /movies/movie/title/text()
-    /movies/movie/*
-    /movies/@*
-    /movies/*/@lang
-    /.
 
-    /movies/movie[rating/text() > 2]
+    <!--
+    1)
+    /rechnungen/rechnung[3]/bezahl-moeglichkeiten/bankverbindung/bank/text()
+
+    2)(was ist den ein namens text? eine adresse entält nie eine telefon nummer...)
+    /rechnungen/rechnung[anschrift-des-leistenden-unternehmers/telefon-nummer]/anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text()
+
+    3)
+    /rechnungen/rechnung/anschrift-des-leistenden-unternehmers/adresse[starts-with(postleihzahl/text(), '7')]/text()
+
+    4)
+    /rechnungen/rechnung/leistungen/leistung[@position and einzel-preis < 100]/@position
+
+    5)
+    /rechnungen/rechnung[leistungen/leistung[contains(@position, '3')]]/rechnungs-nummer
+
+    6)
+    /rechnungen/rechnung[sum(leistungen/leistung/gesamt-preis) != entgelt/gesamt-betrag/text()]
+
+    7)
+    /rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Herr') ] | /rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Frau')]
+
+    8)
+    /rechnungen/rechnung[entgelt/gesamt-betrag > 1000]
+
+    9)
+    /rechnungen/rechnung[entgelt/gesamt-betrag > sum(//rechnungen/rechnung/entgelt/gesamt-betrag) div count(//rechnungen/rechnung]
+
      -->
 </rechnungen>

@@ -1,0 +1,9 @@
+/rechnungen/rechnung[3]/bezahl-moeglichkeiten/bankverbindung/bank/text()
+/rechnungen/rechnung[anschrift-des-leistenden-unternehmers/telefon-nummer]/anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text()
+/rechnungen/rechnung/anschrift-des-leistenden-unternehmers/adresse[starts-with(postleihzahl/text(), '7')]/text()
+/rechnungen/rechnung/leistungen/leistung[@position and einzel-preis < 100]/@position
+/rechnungen/rechnung[leistungen/leistung[contains(@position, '3')]]/rechnungs-nummer
+/rechnungen/rechnung[sum(leistungen/leistung/gesamt-preis) != entgelt/gesamt-betrag/text()]
+/rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Herr') ] | /rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Frau')]
+/rechnungen/rechnung[entgelt/gesamt-betrag > 1000]
+/rechnungen/rechnung[entgelt/gesamt-betrag > sum(//rechnungen/rechnung/entgelt/gesamt-betrag) div count(//rechnungen/rechnung]
