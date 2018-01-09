@@ -1,0 +1,379 @@
+<?xml version = "1.0" encoding ="UTF-8"?>
+
+<rechnungen
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="RechnerAufgabe5.xsd">
+
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>Kleintier Meier GmbH</name-unternehmen>
+            <email-adresse>klein.meier@tiere.de</email-adresse>
+            <adresse>
+                <ort>Machthausen</ort>
+                <postleihzahl>81828</postleihzahl>
+                <strasze>Meierring</strasze>
+                <haus-nummer>3</haus-nummer>
+            </adresse>
+            <telefon-nummer>077987987</telefon-nummer>
+            <fax-nummer>0777987789</fax-nummer>
+        </anschrift-des-leistenden-unternehmers>
+        <steuer-nummer-des-leistenden-unternehmers>8812382822</steuer-nummer-des-leistenden-unternehmers>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
+                <anrede>Frau</anrede>
+                <vorname>Sybille</vorname>
+                <nachname>Sonder-Suttelrau</nachname>
+            </name-leistungs-empfaenger>
+            <adresse>
+                <ort>Siedelsuderstadt</ort>
+                <postleihzahl>77070</postleihzahl>
+                <strasze>Am Suettelbach</strasze>
+                <haus-nummer>17</haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfaengers>
+        <rechnungs-nummer>657321</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>15</tag>
+            <monat>1</monat>
+            <jahr>2017</jahr>
+        </austellungs-datum>
+        <verwendete-waehrung>euro</verwendete-waehrung>
+        <leistungen>
+            <leistung position="1">
+                <bezeichnung>Antike Holzwuermer</bezeichnung>
+                <mengen-anzahl>100</mengen-anzahl>
+                <einzel-preis>1.50</einzel-preis>
+                <gesamt-preis>150.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+                <datum>
+                    <tag>1</tag>
+                    <monat>1</monat>
+                    <jahr>2017</jahr>
+                </datum>
+            </leistung>
+            <leistung position="2">
+                <bezeichnung>Holzwurmfutter</bezeichnung>
+                <mengen-anzahl>1</mengen-anzahl>
+                <einzel-preis>34.45</einzel-preis>
+                <gesamt-preis>34.45</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+                <datum>
+                    <tag>12</tag>
+                    <monat>1</monat>
+                    <jahr>2017</jahr>
+                </datum>
+            </leistung>
+            <leistung position="3">
+                <bezeichnung>Steinlaus Petrophaga lorioti</bezeichnung>
+                <mengen-bezeichnung>1</mengen-bezeichnung>
+                <einzel-preis>777.77</einzel-preis>
+                <gesamt-preis>777.77</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+                <datum>
+                    <tag>12</tag>
+                    <monat>1</monat>
+                    <jahr>2017</jahr>
+                </datum>
+            </leistung>
+        </leistungen>
+        <entgelt>
+            <gesamt-betrag>962.22</gesamt-betrag>
+            <netto-betrag>808.59</netto-betrag>
+            <mehrwert-steuer-betrag>153.63</mehrwert-steuer-betrag>
+        </entgelt>
+        <bezahl-moeglichkeiten>
+            <bankverbindung>
+                <bank>sparkasse karlsruhe</bank>
+                <konto-nr>3568435456</konto-nr>
+                <blz>de 5435764</blz>
+            </bankverbindung>
+            <bitcoin></bitcoin>
+        </bezahl-moeglichkeiten>
+    </rechnung>
+
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>Rochaden-La Hoff Pharma GmbH</name-unternehmen>
+            <adresse>
+                <ort>Grenzye-Wahlen</ort>
+                <postleihzahl>79639</postleihzahl>
+                <strasze>An der Chemie</strasze>
+                <haus-nummer>17</haus-nummer>
+            </adresse>
+        </anschrift-des-leistenden-unternehmers>
+        <umsatzsteuer-identifikations-nummer>DE333666999</umsatzsteuer-identifikations-nummer>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
+                <anrede>Dr.med</anrede>
+                <vorname>Cypirian</vorname>
+                <nachname>Zottel</nachname>
+            </name-leistungs-empfaenger>
+            <adresse>
+                <ort>Zottenheim</ort>
+                <postleihzahl>13023</postleihzahl>
+                <strasze>straßestrudel</strasze>
+                <haus-nummer>5a</haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfaengers>
+        <rechnungs-nummer>98-798-7987</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>8</tag>
+            <monat>8</monat>
+            <jahr>2017</jahr>
+        </austellungs-datum>
+        <verwendete-waehrung>Euro</verwendete-waehrung>
+        <leistungen>
+            <leistung position="1">
+                <bezeichnung>Grippemittel "Tumifla"</bezeichnung>
+                <mengen-bezeichnung>3</mengen-bezeichnung>
+                <einzel-preis>120.00</einzel-preis>
+                <gesamt-preis>360.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung position="2">
+                <bezeichnung>beratung pauschal</bezeichnung>
+                <gesamt-preis>50</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung position="3">
+                <bezeichnung>Abfuehrmittel "wech damit" pro liter</bezeichnung>
+                <mengen-anzahl>2</mengen-anzahl>
+                <mengen-bezeichnung>liter</mengen-bezeichnung>
+                <einzel-preis>99.99</einzel-preis>
+                <gesamt-preis>199.98</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung position="4">
+                <bezeichnung>Energieriegel "Satto"</bezeichnung>
+                <mengen-anzahl>2</mengen-anzahl>
+                <mengen-bezeichnung>stueck</mengen-bezeichnung>
+                <einzel-preis>5.98</einzel-preis>
+                <gesamt-preis>11.96</gesamt-preis>
+                <mehrwertsteuer-in-prozent>7</mehrwertsteuer-in-prozent>
+            </leistung>
+        </leistungen>
+
+        <entgelt>
+            <gesamt-betrag>621.94</gesamt-betrag>
+            <netto-betrag>490.22</netto-betrag>
+            <mehrwert-steuer-betrag>116.74</mehrwert-steuer-betrag>
+        </entgelt>
+
+        <bezahl-moeglichkeiten>
+            <bankverbindung>
+                <bank>deutsche bank loerrach</bank>
+                <iban>5436453643514654</iban>
+                <bic>DE4564655</bic>
+            </bankverbindung>
+        </bezahl-moeglichkeiten>
+    </rechnung>
+
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>bestatter uttenberg</name-unternehmen>
+            <adresse>
+                <ort>ultersingen</ort>
+                <postleihzahl>55215</postleihzahl>
+                <strasze>oberbergweg</strasze>
+                <haus-nummer>5</haus-nummer>
+            </adresse>
+        </anschrift-des-leistenden-unternehmers>
+        <umsatzsteuer-identifikations-nummer>DE6435458435454354</umsatzsteuer-identifikations-nummer>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
+                <anrede>Familie</anrede>
+                <vorname></vorname>
+                <nachname>Urmel</nachname>
+            </name-leistungs-empfaenger>
+            <adresse>
+                <ort>ultersingen</ort>
+                <postleihzahl>58168</postleihzahl>
+                <strasze>ulternstarße</strasze>
+                <haus-nummer>764</haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfaengers>
+        <rechnungs-nummer>58632125</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>19</tag>
+            <monat>7</monat>
+            <jahr>2017</jahr>
+        </austellungs-datum>
+        <verwendete-waehrung>euro</verwendete-waehrung>
+        <leistungen>
+            <leistung position="1">
+                <bezeichnung>urne eiche massive</bezeichnung>
+                <gesamt-preis>299.99</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung position="2">
+                <bezeichnung>ueberfuerung krematorium</bezeichnung>
+                <gesamt-preis>349.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung position="3 ">
+                <bezeichnung>dekoration</bezeichnung>
+                <gesamt-preis>149.50</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung position="4">
+                <bezeichnung>trauerkarten</bezeichnung>
+                <mengen-anzahl>40</mengen-anzahl>
+                <einzel-preis>20.00</einzel-preis>
+                <gesamt-preis>80.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+        </leistungen>
+        <entgelt>
+            <gesamt-betrag>878.49</gesamt-betrag>
+            <netto-betrag>783.23</netto-betrag>
+            <mehrwert-steuer-betrag>140.26</mehrwert-steuer-betrag>
+        </entgelt>
+        <bezahl-moeglichkeiten>
+            <bankverbindung>
+                <iban>6845486545648</iban>
+                <bank>UBS zuerich</bank>
+            </bankverbindung>
+            <bitcoin>zgauwzeuokawfeGDZIWHBALDVGkjbhawudvhkaw56465</bitcoin>
+        </bezahl-moeglichkeiten>
+    </rechnung>
+
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>Weinhandel von Langres</name-unternehmen>
+            <adresse>
+                <ort>Mickhausen</ort>
+                <postleihzahl>86866</postleihzahl>
+                <strasze>Emilianigasse</strasze>
+                <haus-nummer>19</haus-nummer>
+            </adresse>
+        </anschrift-des-leistenden-unternehmers>
+        <umsatzsteuer-identifikations-nummer>DE123456789</umsatzsteuer-identifikations-nummer>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
+                <anrede>Seine Exzellenz der Hochwürdigste Herr Erzbischof</anrede>
+                <vorname>Waldus</vorname>
+                <nachname>Mikksa</nachname>
+            </name-leistungs-empfaenger>
+            <adresse>
+                <ort>Augsburg</ort>
+                <postleihzahl>86152</postleihzahl>
+                <strasze>Fronhof</strasze>
+                <haus-nummer>4</haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfaengers>
+        <rechnungs-nummer>611-555-32</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>7</tag>
+            <monat>11</monat>
+            <jahr>2009</jahr>
+        </austellungs-datum>
+        <verwendete-waehrung>euro</verwendete-waehrung>
+        <leistungen>
+            <leistung position="1">
+                <bezeichnung>Liebliche Gottesmilbe</bezeichnung>
+                <mengen-anzahl>1</mengen-anzahl>
+                <mengen-bezeichnung>Fass</mengen-bezeichnung>
+                <gesamt-preis>2299.98</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung position="2">
+                <bezeichnung>Standardweinglaeser "Schluck"</bezeichnung>
+                <mengen-anzahl>100</mengen-anzahl>
+                <mengen-bezeichnung>Stueck</mengen-bezeichnung>
+                <gesamt-preis>59.90</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+        </leistungen>
+        <entgelt>
+            <gesamt-betrag>2359.88</gesamt-betrag>
+            <netto-betrag>1983.09</netto-betrag>
+            <mehrwert-steuer-betrag>376.79</mehrwert-steuer-betrag>
+        </entgelt>
+        <bezahl-moeglichkeiten>
+            <bankverbindung>
+                <bank>Pax-Bank Köln</bank>
+                <blz>370 601 93</blz>
+                <konto-nr>80200601</konto-nr>
+            </bankverbindung>
+        </bezahl-moeglichkeiten>
+    </rechnung>
+    
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>Peer Weidmann</name-unternehmen>
+            <adresse>
+                <ort>Karlsgrube</ort>
+                <postleihzahl>76131</postleihzahl>
+                <strasze>Kürschnergasse</strasze>
+                <haus-nummer>77</haus-nummer>
+            </adresse>
+        </anschrift-des-leistenden-unternehmers>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
+                <anrede>Herr</anrede>
+                <vorname>Claudius</vorname>
+                <nachname>Artemis</nachname>
+            </name-leistungs-empfaenger>
+            <adresse>
+                <ort>Hirschhausen</ort>
+                <postleihzahl>56741</postleihzahl>
+                <strasze>Am Wolfsweiher</strasze>
+                <haus-nummer>7</haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfaengers>
+        <rechnungs-nummer>1</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>9</tag>
+            <monat>8</monat>
+            <jahr>17</jahr>
+        </austellungs-datum>
+        <verwendete-waehrung>Euro</verwendete-waehrung>
+        <leistungen>
+            <leistung position="1">
+                <bezeichnung>Vogelschnepper, um 1600</bezeichnung>
+                <gesamt-preis>3499.00</gesamt-preis>
+                <mehrwertsteuer-in-prozent>0</mehrwertsteuer-in-prozent>
+            </leistung>
+            <leistung position="2">
+                <bezeichnung>Schusser, um 1720</bezeichnung>
+                <mengen-anzahl>200</mengen-anzahl>
+                <gesamt-preis>99.99</gesamt-preis>
+                <mehrwertsteuer-in-prozent>0</mehrwertsteuer-in-prozent>
+            </leistung>
+        </leistungen>
+        <entgelt>
+            <gesamt-betrag>3598.99</gesamt-betrag>
+        </entgelt>
+        <bezahl-moeglichkeiten></bezahl-moeglichkeiten>
+    </rechnung>
+
+    <!--
+    1)
+    /rechnungen/rechnung[3]/bezahl-moeglichkeiten/bankverbindung/bank/text()
+
+    2)(was ist den ein namens text? eine adresse entält nie eine telefon nummer...)
+    /rechnungen/rechnung[anschrift-des-leistenden-unternehmers/telefon-nummer]/anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text()
+
+    3)
+    /rechnungen/rechnung/anschrift-des-leistenden-unternehmers/adresse[starts-with(postleihzahl/text(), '7')]/text()
+
+    4)
+    /rechnungen/rechnung/leistungen/leistung[@position and einzel-preis < 100]/@position
+
+    5)
+    /rechnungen/rechnung[leistungen/leistung[contains(@position, '3')]]/rechnungs-nummer
+
+    6)
+    /rechnungen/rechnung[sum(leistungen/leistung/gesamt-preis) != entgelt/gesamt-betrag/text()]
+
+    7)
+    /rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Herr') ] | /rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Frau')]
+
+    8)
+    /rechnungen/rechnung[entgelt/gesamt-betrag > 1000]
+
+    9)
+    /rechnungen/rechnung[entgelt/gesamt-betrag > sum(//rechnungen/rechnung/entgelt/gesamt-betrag) div count(//rechnungen/rechnung]
+
+     -->
+</rechnungen>
