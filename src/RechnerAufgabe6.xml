@@ -1,8 +1,6 @@
 <?xml version = "1.0" encoding ="UTF-8"?>
 
-<rechnungen
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="RechnerAufgabe5.xsd">
+<rechnungen>
 
     <rechnung>
         <anschrift-des-leistenden-unternehmers>
@@ -347,33 +345,57 @@
         <bezahl-moeglichkeiten></bezahl-moeglichkeiten>
     </rechnung>
 
-    <!--
-    1)
-    /rechnungen/rechnung[3]/bezahl-moeglichkeiten/bankverbindung/bank/text()
-
-    2)(was ist den ein namens text? eine adresse entält nie eine telefon nummer...)
-    /rechnungen/rechnung[anschrift-des-leistenden-unternehmers/telefon-nummer]/anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text()
-
-    3)
-    /rechnungen/rechnung/anschrift-des-leistenden-unternehmers/adresse[starts-with(postleihzahl/text(), '7')]/text()
-
-    4)
-    /rechnungen/rechnung/leistungen/leistung[@position and einzel-preis < 100]/@position
-
-    5)
-    /rechnungen/rechnung[leistungen/leistung[contains(@position, '3')]]/rechnungs-nummer
-
-    6)
-    /rechnungen/rechnung[sum(leistungen/leistung/gesamt-preis) != entgelt/gesamt-betrag/text()]
-
-    7)
-    /rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Herr') ] | /rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Frau')]
-
-    8)
-    /rechnungen/rechnung[entgelt/gesamt-betrag > 1000]
-
-    9)
-    /rechnungen/rechnung[entgelt/gesamt-betrag > sum(//rechnungen/rechnung/entgelt/gesamt-betrag) div count(//rechnungen/rechnung]
-
-     -->
+    <rechnung>
+        <anschrift-des-leistenden-unternehmers>
+            <name-unternehmen>Dr. Klöpner Sanitäreinrichtungen</name-unternehmen>
+            <adresse>
+                <ort>Bischhofsborn</ort>
+                <postleihzahl>43354</postleihzahl>
+                <strasze>Zur Wasserkuppe</strasze>
+                <haus-nummer>99</haus-nummer>
+            </adresse>
+        </anschrift-des-leistenden-unternehmers>
+        <umsatzsteuer-identifikations-nummer>DE112233449</umsatzsteuer-identifikations-nummer>
+        <anschrift-des-leistungs-empfaengers>
+            <name-leistungs-empfaenger>
+                <anrede>Herr</anrede>
+                <vorname>Müller</vorname>
+                <nachname>Lüdenscheid</nachname>
+            </name-leistungs-empfaenger>
+            <adresse>
+                <ort>Dammhausen</ort>
+                <postleihzahl>17777</postleihzahl>
+                <strasze>Badstrasse</strasze>
+                <haus-nummer>3</haus-nummer>
+            </adresse>
+        </anschrift-des-leistungs-empfaengers>
+        <rechnungs-nummer>47-11</rechnungs-nummer>
+        <austellungs-datum>
+            <tag>31</tag>
+            <monat>12</monat>
+            <jahr>2016</jahr>
+        </austellungs-datum>
+        <verwendete-waehrung>euro</verwendete-waehrung>
+        <leistungen>
+            <leistung position="1">
+                <bezeichnung>Gummiente "Quietsch"</bezeichnung>
+                <mengen-anzahl>1</mengen-anzahl>
+                <mengen-bezeichnung>stueck</mengen-bezeichnung>
+                <einzel-preis>19.99</einzel-preis>
+                <gesamt-preis>19.99</gesamt-preis>
+                <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
+            </leistung>
+        </leistungen>
+        <entgelt>
+            <gesamt-betrag>19.99</gesamt-betrag>
+            <netto-betrag>16.80</netto-betrag>
+        </entgelt>
+        <bezahl-moeglichkeiten>
+            <bankverbindung>
+                <bank>Adelsbank Bischhofsborn</bank>
+                <blz>7775511</blz>
+                <konto-nr>80870733</konto-nr>
+            </bankverbindung>
+        </bezahl-moeglichkeiten>
+    </rechnung>
 </rechnungen>
