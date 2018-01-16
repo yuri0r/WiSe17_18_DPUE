@@ -3,17 +3,17 @@
     <xsl:template match="/rechnungen">
         <!-- how do i format text??-->
         <xsl:for-each select="rechnung">
-            <xsl:if test="gesamt-betrag &lt; 1000">
+            <xsl:if test="gesamt-betrag &lt; 1000 and name-leistungs-empfaenger">
                 <xsl:apply-templates select="name-leistungs-empfaenger/anrede/text()"/>
                 <xsl:text> </xsl:text>
                 <xsl:apply-templates select="name-leistungs-empfaenger/nachname/text()"/>
                 <xsl:text>.</xsl:text>
                 <xsl:text>&#xa;Danke für die Zahlung von </xsl:text>
                 <xsl:apply-templates select="gesamt-betrag/text()"/>
-                <xsl:text>für die Rechnung vom </xsl:text>
-                <xsl:apply-templates select="austellungs-datum/monat"/>
-                <xsl:text>.</xsl:text>
+                <xsl:text> für die Rechnung vom </xsl:text>
                 <xsl:apply-templates select="austellungs-datum/tag"/>
+                <xsl:text>.</xsl:text>
+                <xsl:apply-templates select="austellungs-datum/monat"/>
                 <xsl:text>.</xsl:text>
                 <xsl:apply-templates select="austellungs-datum/jahr"/>
                 <xsl:text>.&#xa;</xsl:text>

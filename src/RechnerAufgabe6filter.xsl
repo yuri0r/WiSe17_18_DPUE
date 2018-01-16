@@ -8,11 +8,11 @@
                         <!-- punkt 1,2 & 3-->
                         <xsl:copy-of select="austellungs-datum"/>
                         <xsl:copy-of select="rechnungs-nummer"/>
-                        <!-- punkt 4 -->
-                        <xsl:if test="/rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Herr') or  /rechnungen/rechnung[contains(anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger/anrede/text(), 'Frau')]]">
+                        <xsl:if test="anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger[contains(anrede,'Herr') or contains(anrede,'Frau')]">
                             <xsl:copy-of select="anschrift-des-leistungs-empfaengers/name-leistungs-empfaenger"/>
                             <xsl:copy-of select="anschrift-des-leistungs-empfaengers/adresse"/>
                         </xsl:if>
+                        <!-- punkt 4 -->
                         <xsl:for-each select="leistungen/leistung">
                             <xsl:copy>
                                 <xsl:element name="position">
