@@ -1,53 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><rechnungen><rechnung><austellungs-datum>
+<?xml version="1.0" encoding="UTF-8"?>
+<rechnungen>
+    <rechnung>
+        <austellungs-datum>
             <tag>15</tag>
             <monat>1</monat>
             <jahr>2017</jahr>
-        </austellungs-datum><rechnungs-nummer>657321</rechnungs-nummer><name-leistungs-empfaenger>
-                <anrede>Frau</anrede>
-                <vorname>Sybille</vorname>
-                <nachname>Sonder-Suttelrau</nachname>
-            </name-leistungs-empfaenger><adresse>
-                <ort>Siedelsuderstadt</ort>
-                <postleihzahl>77070</postleihzahl>
-                <strasze>Am Suettelbach</strasze>
-                <haus-nummer>17</haus-nummer>
-            </adresse><leistung><position>1</position><bezeichnung>Antike Holzwuermer</bezeichnung></leistung><leistung><position>2</position><bezeichnung>Holzwurmfutter</bezeichnung></leistung><leistung><position>3</position><bezeichnung>Steinlaus Petrophaga lorioti</bezeichnung></leistung><gesamt-betrag>962.22</gesamt-betrag></rechnung><rechnung><austellungs-datum>
+        </austellungs-datum>
+        <rechnungs-nummer>657321</rechnungs-nummer>
+        <name-leistungs-empfaenger>
+            <anrede>Frau</anrede>
+            <vorname>Sybille</vorname>
+            <nachname>Sonder-Suttelrau</nachname>
+        </name-leistungs-empfaenger>
+        <adresse>
+            <ort>Siedelsuderstadt</ort>
+            <postleihzahl>77070</postleihzahl>
+            <strasze>Am Suettelbach</strasze>
+            <haus-nummer>17</haus-nummer>
+        </adresse>
+        <leistung>
+            <position>1</position>
+            <bezeichnung>Antike Holzwuermer</bezeichnung>
+        </leistung>
+        <leistung>
+            <position>2</position>
+            <bezeichnung>Holzwurmfutter</bezeichnung>
+        </leistung>
+        <leistung>
+            <position>3</position>
+            <bezeichnung>Steinlaus Petrophaga lorioti</bezeichnung>
+        </leistung>
+        <gesamt-betrag>962.22</gesamt-betrag>
+    </rechnung>
+    <rechnung>
+        <austellungs-datum>
             <tag>8</tag>
             <monat>8</monat>
             <jahr>2017</jahr>
-        </austellungs-datum><rechnungs-nummer>98-798-7987</rechnungs-nummer><name-leistungs-empfaenger>
-                <anrede>Dr.med</anrede>
-                <vorname>Cypirian</vorname>
-                <nachname>Zottel</nachname>
-            </name-leistungs-empfaenger><adresse>
-                <ort>Zottenheim</ort>
-                <postleihzahl>13023</postleihzahl>
-                <strasze>straßestrudel</strasze>
-                <haus-nummer>5a</haus-nummer>
-            </adresse><leistung><position>1</position><bezeichnung>Grippemittel "Tumifla"</bezeichnung></leistung><leistung><position>2</position><bezeichnung>beratung pauschal</bezeichnung></leistung><leistung><position>3</position><bezeichnung>Abfuehrmittel "wech damit" pro liter</bezeichnung></leistung><leistung><position>4</position><bezeichnung>Energieriegel "Satto"</bezeichnung></leistung><gesamt-betrag>621.94</gesamt-betrag></rechnung><rechnung><austellungs-datum>
+        </austellungs-datum>
+        <rechnungs-nummer>98-798-7987</rechnungs-nummer>
+        <name-leistungs-empfaenger>
+            <anrede>Dr.med</anrede>
+            <vorname>Cypirian</vorname>
+            <nachname>Zottel</nachname>
+        </name-leistungs-empfaenger>
+        <adresse>
+            <ort>Zottenheim</ort>
+            <postleihzahl>13023</postleihzahl>
+            <strasze>straßestrudel</strasze>
+            <haus-nummer>5a</haus-nummer>
+        </adresse>
+        <leistung>
+            <position>1</position>
+            <bezeichnung>Grippemittel "Tumifla"</bezeichnung>
+        </leistung>
+        <leistung>
+            <position>2</position>
+            <bezeichnung>beratung pauschal</bezeichnung>
+        </leistung>
+        <leistung>
+            <position>3</position>
+            <bezeichnung>Abfuehrmittel "wech damit" pro liter</bezeichnung>
+        </leistung>
+        <leistung>
+            <position>4</position>
+            <bezeichnung>Energieriegel "Satto"</bezeichnung>
+        </leistung>
+        <gesamt-betrag>621.94</gesamt-betrag>
+    </rechnung>
+    <rechnung>
+        <austellungs-datum>
             <tag>19</tag>
             <monat>7</monat>
             <jahr>2017</jahr>
-        </austellungs-datum><rechnungs-nummer>58632125</rechnungs-nummer><name-leistungs-empfaenger>
-                <anrede>Familie</anrede>
-                <vorname/>
-                <nachname>Urmel</nachname>
-            </name-leistungs-empfaenger><adresse>
-                <ort>ultersingen</ort>
-                <postleihzahl>58168</postleihzahl>
-                <strasze>ulternstarße</strasze>
-                <haus-nummer>764</haus-nummer>
-            </adresse><leistung><position>1</position><bezeichnung>urne eiche massive</bezeichnung></leistung><leistung><position>2</position><bezeichnung>ueberfuerung krematorium</bezeichnung></leistung><leistung><position>3</position><bezeichnung>dekoration</bezeichnung></leistung><leistung><position>4</position><bezeichnung>trauerkarten</bezeichnung></leistung><gesamt-betrag>878.49</gesamt-betrag></rechnung><rechnung><austellungs-datum>
+        </austellungs-datum>
+        <rechnungs-nummer>58632125</rechnungs-nummer>
+        <name-leistungs-empfaenger>
+            <anrede>Familie</anrede>
+            <vorname/>
+            <nachname>Urmel</nachname>
+        </name-leistungs-empfaenger>
+        <adresse>
+            <ort>ultersingen</ort>
+            <postleihzahl>58168</postleihzahl>
+            <strasze>ulternstarße</strasze>
+            <haus-nummer>764</haus-nummer>
+        </adresse>
+        <leistung>
+            <position>1</position>
+            <bezeichnung>urne eiche massive</bezeichnung>
+        </leistung>
+        <leistung>
+            <position>2</position>
+            <bezeichnung>ueberfuerung krematorium</bezeichnung>
+        </leistung>
+        <leistung>
+            <position>3</position>
+            <bezeichnung>dekoration</bezeichnung>
+        </leistung>
+        <leistung>
+            <position>4</position>
+            <bezeichnung>trauerkarten</bezeichnung>
+        </leistung>
+        <gesamt-betrag>878.49</gesamt-betrag>
+    </rechnung>
+    <rechnung>
+        <austellungs-datum>
             <tag>31</tag>
             <monat>12</monat>
             <jahr>2016</jahr>
-        </austellungs-datum><rechnungs-nummer>47-11</rechnungs-nummer><name-leistungs-empfaenger>
-                <anrede>Herr</anrede>
-                <vorname>Müller</vorname>
-                <nachname>Lüdenscheid</nachname>
-            </name-leistungs-empfaenger><adresse>
-                <ort>Dammhausen</ort>
-                <postleihzahl>17777</postleihzahl>
-                <strasze>Badstrasse</strasze>
-                <haus-nummer>3</haus-nummer>
-            </adresse><leistung><position>1</position><bezeichnung>Gummiente "Quietsch"</bezeichnung></leistung><gesamt-betrag>19.99</gesamt-betrag></rechnung></rechnungen>
+        </austellungs-datum>
+        <rechnungs-nummer>47-11</rechnungs-nummer>
+        <name-leistungs-empfaenger>
+            <anrede>Herr</anrede>
+            <vorname>Müller</vorname>
+            <nachname>Lüdenscheid</nachname>
+        </name-leistungs-empfaenger>
+        <adresse>
+            <ort>Dammhausen</ort>
+            <postleihzahl>17777</postleihzahl>
+            <strasze>Badstrasse</strasze>
+            <haus-nummer>3</haus-nummer>
+        </adresse>
+        <leistung>
+            <position>1</position>
+            <bezeichnung>Gummiente "Quietsch"</bezeichnung>
+        </leistung>
+        <gesamt-betrag>19.99</gesamt-betrag>
+    </rechnung>
+</rechnungen>

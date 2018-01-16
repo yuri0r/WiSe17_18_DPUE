@@ -1,4 +1,5 @@
 <?xml version = "1.0" encoding ="UTF-8"?>
+<!DOCTYPE rechnungen PUBLIC "RechnerAufgabe2" "RechnerAufgabe6.dtd">
 
 <rechnungen>
 
@@ -85,7 +86,6 @@
                 <konto-nr>3568435456</konto-nr>
                 <blz>de 5435764</blz>
             </bankverbindung>
-            <bitcoin></bitcoin>
         </bezahl-moeglichkeiten>
     </rechnung>
 
@@ -123,7 +123,7 @@
         <leistungen>
             <leistung position="1">
                 <bezeichnung>Grippemittel "Tumifla"</bezeichnung>
-                <mengen-bezeichnung>3</mengen-bezeichnung>
+                <mengen-anzahl>3</mengen-anzahl>
                 <einzel-preis>120.00</einzel-preis>
                 <gesamt-preis>360.00</gesamt-preis>
                 <mehrwertsteuer-in-prozent>19</mehrwertsteuer-in-prozent>
@@ -159,9 +159,9 @@
 
         <bezahl-moeglichkeiten>
             <bankverbindung>
-                <bank>deutsche bank loerrach</bank>
                 <iban>5436453643514654</iban>
                 <bic>DE4564655</bic>
+                <bank>deutsche bank loerrach</bank>
             </bankverbindung>
         </bezahl-moeglichkeiten>
     </rechnung>
@@ -290,8 +290,8 @@
         <bezahl-moeglichkeiten>
             <bankverbindung>
                 <bank>Pax-Bank Köln</bank>
-                <blz>370 601 93</blz>
                 <konto-nr>80200601</konto-nr>
+                <blz>370 601 93</blz>
             </bankverbindung>
         </bezahl-moeglichkeiten>
     </rechnung>
@@ -342,7 +342,6 @@
         <entgelt>
             <gesamt-betrag>3598.99</gesamt-betrag>
         </entgelt>
-        <bezahl-moeglichkeiten></bezahl-moeglichkeiten>
     </rechnung>
 
     <rechnung>
@@ -393,8 +392,8 @@
         <bezahl-moeglichkeiten>
             <bankverbindung>
                 <bank>Adelsbank Bischhofsborn</bank>
-                <blz>7775511</blz>
                 <konto-nr>80870733</konto-nr>
+                <blz>7775511</blz>
             </bankverbindung>
         </bezahl-moeglichkeiten>
     </rechnung>
